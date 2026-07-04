@@ -2,10 +2,15 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:"Vazirmatn",sans-serif;
 }
-
+@font-face {
+    font-family: "Vazir";
+    src: url("/fonts/Vazir.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 body{
+    font-family: Vazir;
     direction:rtl;
     background:#f8f9fc;
     color:#222;
@@ -109,8 +114,13 @@ body{
     margin-bottom:30px;
     font-size:30px;
 }
-
+input,
+textarea,
+button{
+    font-family: "Vazir", sans-serif;
+}
 .input-group{
+    font-family: Vazir;
     margin-bottom:22px;
 }
 
@@ -133,7 +143,7 @@ body{
 
 .input-group input:focus,
 .input-group textarea:focus{
-    border-color:#FFD36A;
+    border-color:#ff7a00;
     background:#fff;
 }
 
